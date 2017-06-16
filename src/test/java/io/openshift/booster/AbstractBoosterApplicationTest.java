@@ -28,7 +28,7 @@ public abstract class AbstractBoosterApplicationTest {
         when().get()
                 .then()
                 .statusCode(200)
-                .body("content", is("Hello, World!"));
+                .body("content", is("Hallo, World!"));
     }
 
     @Test
@@ -38,7 +38,7 @@ public abstract class AbstractBoosterApplicationTest {
                 .get()
                 .then()
                 .statusCode(200)
-                .body("content", is("Hello, John!"));
+                .body("content", is("Hallo, John!"));
     }
 
 }
